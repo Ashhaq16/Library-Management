@@ -3,3 +3,7 @@ Library Management involves efficiently organizing, maintaining, and providing a
 
 ### Library login Page
 ![](/login.png)
+
+### Library admin Page
+
+![](/admin.png)
