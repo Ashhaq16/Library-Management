@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="648.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library_management_system.AdminDashboardController">
+   <children>
+      <Label alignment="CENTER" layoutX="227.0" layoutY="22.0" prefHeight="48.0" prefWidth="360.0" style="-fx-background-color: purple;" text="Admin Dashboard" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listview1" layoutX="25.0" layoutY="96.0" prefHeight="520.0" prefWidth="306.0" />
+      <Button fx:id="btn4" layoutX="419.0" layoutY="125.0" mnemonicParsing="false" onAction="#uploadpdf" text="Select Your Book PDF " />
+      <TextField fx:id="detailsbook" layoutX="419.0" layoutY="168.0" prefHeight="86.0" prefWidth="223.0" text="Details of Book" />
+      <Button fx:id="btn5" layoutX="587.0" layoutY="276.0" mnemonicParsing="false" onAction="#submit5" text="Upload" />
+      <Button fx:id="btn6" layoutX="504.0" layoutY="276.0" mnemonicParsing="false" onAction="#submit6" text="Update" />
+      <Button fx:id="btn7" layoutX="419.0" layoutY="276.0" mnemonicParsing="false" onAction="#submit7" text="Delete" />
+      <Button fx:id="logout1" layoutX="718.0" layoutY="590.0" mnemonicParsing="false" onAction="#logoutbtn1" text="Logout" />
+   </children>
+</AnchorPane>

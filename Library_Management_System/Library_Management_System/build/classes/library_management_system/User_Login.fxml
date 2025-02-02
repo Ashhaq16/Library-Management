@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="262.0" prefWidth="720.0" style="-fx-border-color: purple;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library_management_system.User_LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="262.0" prefWidth="720.0" style="-fx-border-color: purple; -fx-background-color: #BFEFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library_management_system.User_LoginController">
    <children>
-      <ImageView fitHeight="237.0" fitWidth="455.0" layoutX="279.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="328.0" fitWidth="388.0" layoutX="312.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@picture/pic.png" />
          </image>
@@ -25,7 +25,7 @@
             <Font name="Bank Gothic Light BT" size="18.0" />
          </font>
       </Label>
-      <Label blendMode="DARKEN" layoutX="27.0" layoutY="64.0" prefHeight="17.0" prefWidth="53.0" text="User ID:">
+      <Label blendMode="DARKEN" layoutX="25.0" layoutY="62.0" prefHeight="18.0" prefWidth="40.0" text="User Id:">
          <cursor>
             <Cursor fx:constant="DEFAULT" />
          </cursor>
@@ -38,7 +38,7 @@
             <Blend />
          </effect>
       </Label>
-      <Button fx:id="btn1" layoutX="96.0" layoutY="146.0" mnemonicParsing="false" onAction="#submit" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: purple;" text="Login" textFill="WHITE">
+      <Button fx:id="btn1" layoutX="108.0" layoutY="140.0" mnemonicParsing="false" onAction="#submit" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: purple; -fx-background-radius: 20;" text="Login" textFill="WHITE">
          <font>
             <Font name="Arial Rounded MT Bold" size="16.0" />
          </font>
@@ -49,11 +49,12 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Label fx:id="alertlabel" alignment="CENTER" layoutX="27.0" layoutY="221.0" prefHeight="31.0" prefWidth="252.0">
+      <Label fx:id="alertlabel" alignment="CENTER" layoutX="27.0" layoutY="225.0" prefHeight="31.0" prefWidth="252.0">
          <font>
             <Font size="11.0" />
          </font>
       </Label>
-      <Hyperlink fx:id="link" layoutX="111.0" layoutY="189.0" onAction="#link1" text="Admin Login ?" />
+      <Hyperlink fx:id="link" layoutX="112.0" layoutY="185.0" onAction="#link1" text="Admin Login ?" />
+      <Hyperlink fx:id="link3" layoutX="88.0" layoutY="214.0" onAction="#link3" text="Create a new account ?" />
    </children>
 </AnchorPane>

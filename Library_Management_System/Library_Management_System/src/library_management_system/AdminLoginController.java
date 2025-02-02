@@ -52,7 +52,18 @@ public class AdminLoginController implements Initializable {
         if (adminIdInput.equals("admin") && adminPassInput.equals("admin123")) {
             label2.setText("Login successful!");
 
-            
+            // Redirect to Admin Dashboard on successful login
+            try {
+                Parent root = FXMLLoader.load(getClass().getResource("Admin Dashboard.fxml"));
+                Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+                stage.setScene(new Scene(root));
+                stage.setTitle("Admin Dashboard");
+                stage.show();
+            } catch (IOException e) {
+                System.out.println("Error loading AdminDashboard.fxml: " + e.getMessage());
+            }
+
+            // Clear the fields after login
             adminid.clear();
             adminpass.clear();
         } else {
@@ -69,7 +80,7 @@ public class AdminLoginController implements Initializable {
             stage.setTitle("User Login Form");
             stage.show();
         } catch (IOException e) {
-            System.out.println("Error loading AdminLogin.fxml: " + e.getMessage());
+            System.out.println("Error loading User_Login.fxml: " + e.getMessage());
         }
     }
 }

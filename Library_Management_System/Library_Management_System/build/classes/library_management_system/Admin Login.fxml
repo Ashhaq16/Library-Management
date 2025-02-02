@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="687.0" style="-fx-border-color: purple;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library_management_system.AdminLoginController">
+   <children>
+      <Label fx:id="label1" alignment="CENTER" layoutX="83.0" layoutY="26.0" prefHeight="21.0" prefWidth="135.0" style="-fx-background-color: #B0E0E6;" text="Admin Login">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="68.0" text="Admin Id:" />
+      <Label layoutX="17.0" layoutY="103.0" text="Password:" />
+      <TextField fx:id="adminid" layoutX="76.0" layoutY="65.0" promptText="admin id" />
+      <TextField fx:id="adminpass" layoutX="76.0" layoutY="100.0" promptText="admin password" />
+      <Button fx:id="btn2" layoutX="124.0" layoutY="136.0" mnemonicParsing="false" onAction="#submit1" style="-fx-background-color: #E6E6FA;" text="Login" />
+      <Label fx:id="label2" alignment="CENTER" layoutX="32.0" layoutY="197.0" prefHeight="59.0" prefWidth="219.0" />
+      <ImageView fitHeight="237.0" fitWidth="383.0" layoutX="290.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@picture/pic.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="link2" layoutX="110.0" layoutY="174.0" onAction="#link2" style="-fx-background-color: #E6E6FA;" text="User Login ?" />
+   </children>
+</AnchorPane>
